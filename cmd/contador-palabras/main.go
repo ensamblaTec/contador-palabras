@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println(utils.FilterDir("./"))
+	fmt.Println(utils.ReadAndCountWordAndLines("test.txt"))
 }
