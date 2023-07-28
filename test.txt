@@ -1,7 +1,0 @@
-a     
-buffer
-c
-
-de
-
-f f f f f f
