@@ -9,6 +9,10 @@ import (
 	"strings"
 )
 
+var validFiles = []string{
+	".txt",
+}
+
 // Método para leer un archivo
 func ReadFile(fileName string) string {
 	file, err := os.ReadFile(fileName)
@@ -28,9 +32,7 @@ func ReadAndCountWordAndLines(fileName string) (wordCount, lineCount uint) {
 		if len(line) == 0 {
 			continue
 		}
-
 		lineCount++
-
 		for _, word := range strings.Split(line, " ") {
 			word = strings.Trim(word, " ")
 			if len(word) != 0 && word != " " {
@@ -87,4 +89,16 @@ func FilterDir(fileName string) string {
 	}
 
 	return out
+}
+
+// verificar si es un archivo valido
+func IsVerifyDir(fileName string) bool {
+	fileExt := path.Ext(fileName)
+	for _, ext := range validFiles {
+		if ext == fileExt {
+			return true
+		}
+	}
+
+	return false
 }
