@@ -10,8 +10,8 @@
 
 ## Funcionalidades
 
-- [ X ]  Puede leer los ficheros txt y mostrarlo en pantalla
-- [ X ]  Cuenta el número de palabras
-- [ X ]  Cuenta el número de lineas
-- [ X ]  Puedes ver los ficheros txt del directorio
-- [ X ]  CI/CD
+- [X]  Puede leer los ficheros txt y mostrarlo en pantalla
+- [X]  Cuenta el número de palabras
+- [X]  Cuenta el número de lineas
+- [X]  Puedes ver los ficheros txt del directorio
+- [X]  CI/CD
